@@ -20,7 +20,7 @@
                 </li>
                 
                 <li>
-                    <a href="./yay.html">yay</a>
+                    <a href="./yay.html">Produto</a>
                 </li>
 
                 <li>
@@ -29,16 +29,51 @@
                 
             </ul>
         </nav>
-    </header>
+            <button>
+                <span _msttexthash="94341" _msthidden="1" _msthash="2">English </span>
+            </button>
+        </header>
 
+
+      <h1>Bem-vindo ao site!</h1>
+    <p>Este é um exemplo de troca de idioma.</p>
+    <p>Você pode clicar no botão abaixo para mudar o idioma.</p>
+    <button onclick="mudarIdioma()">Mudar Idioma</button>
+
+    <script>
+        async function traduzirTexto(texto, idiomaDestino) {
+            const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${idiomaDestino}&dt=t&q=${encodeURIComponent(texto)}`;
+            const resposta = await fetch(url);
+            const dados = await resposta.json();
+            return dados[0][0][0]; // Retorna o texto traduzido
+        }
+
+        async function mudarIdioma() {
+            const idiomaDestino = prompt("Digite o código do idioma (ex: en para inglês, es para espanhol, fr para francês):");
+            if (!idiomaDestino) return;
+
+            let elementos = document.body.querySelectorAll("*");
+            for (let elemento of elementos) {
+                if (elemento.innerHTML.trim() !== "") {
+                    elemento.innerHTML = await traduzirTexto(elemento.innerHTML, idiomaDestino);
+                }
+            }
+        }
+    </script>
+
+        <h1>  </h1>
+
+
+        <p></p>
     <footer>
 
         <p>nos visite em: 48°52'6"S 123°23'6" W.</p>
         <p>estatamos abertos das 3h as 3h 1min</p>
-        <p>>:D</p>
+        
 
     </footer>
 
 </body>
 
 </html>
+
