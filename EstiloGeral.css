@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+* {
+    font-family: "Jersey 25", sans-serif;
+    font-size: 25px;
+}
+html {scroll-behavior: smooth;}
+
+body {
+
+    background-image: url(../images/xadrez.jpg);/*imagem de fundo*/
+
+    margin: 0px;
+
+}
+ /*coisa de cima*/
+header{
+    min-height: 10px;
+
+    text-transform: uppercase;
+
+    text-align: center;
+
+    background-color: #1e3da1;
+}
+
+header img{
+
+    width: 150px;
+
+}
+
+ul{
+    padding: 20px;
+    
+    margin: 0;
+    
+}
+
+nav > ul {
+    
+    text-decoration: none;
+    
+    color: #ffffff;
+    
+    padding-inline-start: 0; /*padding no inicio do texto*/
+    
+    display: inline-block;
+    
+    margin-block-start: 0;
+    
+    list-style-type: none; /*bolinhas q ficam do lado para simbolizar uma lista*/
+}
+
+nav ul a {
+
+   
+
+    text-decoration: none;
+
+    color: #ffffff;
+
+}
+
+nav ul li {
+margin: 5px 0 5px 0;
+
+}
+
+/*texto normal*/
+section{
+    background-color: #4f3c64;
+    box-sizing: border-box;/*faz com q section inclua border e padding */
+    margin: auto; /* a margem se ajusta com o tamanho da tela e fica no meio*/
+    padding: 20px; /*ele faz com que o padding do texto n fique pra fora do section por falta de espaço*/
+    width: 1200px; /* largura da section*/
+    text-align: center;
+
+}
+/*texto*/
+h1{
+    text-transform: uppercase;
+
+    color: #c44f4f;
+}
+
+h2{
+    text-transform: uppercase;
+
+    text-align:left;
+
+    color: #6881d4;
+}
+
+p {
+    color: #ffffff; 
+
+    text-align: justify;
+}
+
+ul{
+    color: #d69494; 
+
+    text-align: justify;
+
+}
+
+ol{
+    color: #9e94d6; 
+
+    text-align: justify;
+
+}
+
+/*imagem maldita*/
+
+section img {
+    box-sizing: border-box;
+    
+    width: 500px;
+
+    margin: auto;
+
+    border: 5px solid #000;
+
+    display: block;
+
+}
+
+/*tabela*/
+table {
+    background-color: #430969;
+
+    border-collapse: collapse;
+
+    border: 2px solid #000;
+
+    width: 400px;
+
+    margin: auto;
+
+    margin-bottom: 20px;
+
+}
+
+th {
+    background-color: #bc5cd4;
+
+    border: 2px solid #000;
+
+}
+
+tr {
+    background-color: #ffffff;
+
+    border: 2px solid #000;
+
+}
+
+td{
+    border: 2px solid #000;
+}
+
+
+div img{ 
+    width: 200px;
+
+}
+
+/*formulario*/
+form {
+    border: 2p outset #bef010;
+    background-color: gray;
+    width: 80%;
+    font-weight: bold;
+    padding: 5%;
+    border: 10px dashed #8f1a1a;
+}
+
+input {
+    background-color: #c4454580;
+    margin: 8px;
+}
+
+
+label {
+    color: #150e52;
+    }
+    
+    
+    /*rodapé*/
+footer {
+    background-image: url(../images/hollow\ knight.jpg);
+    
+    min-height: 200px;
+    
+    }
+footer p {
+    color: #d8d8d8;
+    
+    text-align: center;
+    
+    padding: 30px 10px 0 10px;
+    
+    margin-bottom: 0;
+    
+    text-transform: uppercase;
+    
+    }
+
+/*pfessor n ensinou:*/
+form ::placeholder{
+color: #471515;
+}
