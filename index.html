@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startup</title>
     <link rel="stylesheet" href="./EstiloGeral.css">
+    <link rel="stylesheet" href="./Iniciopag.css">
 
 </head>
 <body>
@@ -12,68 +13,30 @@
     <header>
 
         <img src="./images/patin.png" alt="pato logo??">
-        <nav>    
-            <a href="./index.html">pagina inicial</a>
+        <nav>
+            
+                <a href="./index.html">pagina inicial</a>
                 
-            <a href="./Nós.html"> Sobre Nós</a>
+                <a href="./Nós.html"> Sobre Nós</a>
             
-            <a href="./yay.html">Produto</a>                                   
-            
+                <a href="./yay.html">Produto</a>
+ 
         </nav>
-            <button>
-                <span _msttexthash="94341" _msthidden="1" _msthash="2">English </span>
-            </button>
+            
     </header>
 
+        
 
     <section>
-        <h1>Bem-vindo ao site!</h1>
-        <p>Este é um exemplo de troca de idioma.</p>
-        <p>Você pode clicar no botão abaixo para mudar o idioma.</p>
-        <button onclick="mudarIdioma()">Mudar Idioma</button>
-
-        <h2>teste para o footer ficar no lugar</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Aut, iure magni? Recusandae numquam eligendi obcaecati aliquid
-            in voluptatibus accusantium aperiam, fuga esse dignissimos
-            temporibus optio error qui ipsa vitae alias. Ut earum maxime
-            velit, tenetur magnam doloremque, distinctio dolor voluptate
-            non harum dolore, autem hic. Laboriosam eaque minus, beatae
-            enim sapiente reiciendis veritatis laborum quibusdam nam
-            provident incidunt modi atque obcaecati excepturi soluta
-            exercitationem asperiores deleniti accusantium aliquam facere
-            nihil? Ut deserunt beatae similique consequuntur iusto dolorem
-            nulla vitae fuga, sed, voluptates, repellendus natus quam ea
-            ratione. Dicta temporibus eveniet voluptate eaque nesciunt?
-            Quaerat minus vitae non? Praesentium, impedit quas!
+        <h1> História "nome da empresa" </h1>
+        <p>    
+            Aparelhos tecnológicos em geral, estão presentes na nossa atualidade.
+            Além dos seu grandes benefícios as pessoas acabam esquecendo de como realizar o seu descarte.
+            Por isso nossa startup tem o objetivo de consciêntizar a recliclagem do Lixo eletrônico e
+            redireciona-lo para um lugar apropriado.                                                                                       
         </p>
-
     </section>
-
-
-    <script>
-        async function traduzirTexto(texto, idiomaDestino) {
-            const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${idiomaDestino}&dt=t&q=${encodeURIComponent(texto)}`;
-            const resposta = await fetch(url);
-            const dados = await resposta.json();
-            return dados[0][0][0]; // Retorna o texto traduzido
-        }
-
-        async function mudarIdioma() {
-            const idiomaDestino = prompt("Digite o código do idioma (ex: en para inglês, es para espanhol, fr para francês):");
-            if (!idiomaDestino) return;
-
-            let elementos = document.body.querySelectorAll("*");
-            for (let elemento of elementos) {
-                if (elemento.innerHTML.trim() !== "") {
-                    elemento.innerHTML = await traduzirTexto(elemento.innerHTML, idiomaDestino);
-                }
-            }
-        }
-    </script>
-
-
+    
     <footer>
 
         <p>nos visite em: 48°52'6"S 123°23'6" W.</p>
@@ -85,4 +48,3 @@
 </body>
 
 </html>
-
