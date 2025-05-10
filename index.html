@@ -11,10 +11,11 @@
 
     <header>
 
-        <img src="teccoRenderFINAL.png" alt="Logo da startup, nela tem um personagem coo cabeça de tv de tubo quebrada e roupa com sibolo de reciclagem e ele esta levando uma mochila.">
-        <nav>    
-            <a href="./index.html">pagina inicial</a>
+        <a href="./index.html"><img src="teccoRenderFINAL.png" alt="Logo da startup, nela tem um personagem coo cabeça de tv de tubo quebrada e roupa com sibolo de reciclagem e ele esta levando uma mochila."></a>
+        <nav>        
+
                 
+
             <a href="./Nós.html"> Sobre Nós</a>
             
             <a href="./yay.html">Produto</a>                                   
@@ -65,27 +66,6 @@
 
     </section>
 
-
-    <script>
-        async function traduzirTexto(texto, idiomaDestino) {
-            const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${idiomaDestino}&dt=t&q=${encodeURIComponent(texto)}`;
-            const resposta = await fetch(url);
-            const dados = await resposta.json();
-            return dados[0][0][0]; // Retorna o texto traduzido
-        }
-
-        async function mudarIdioma() {
-            const idiomaDestino = prompt("Digite o código do idioma (ex: en para inglês, es para espanhol, fr para francês):");
-            if (!idiomaDestino) return;
-
-            let elementos = document.body.querySelectorAll("*");
-            for (let elemento of elementos) {
-                if (elemento.innerHTML.trim() !== "") {
-                    elemento.innerHTML = await traduzirTexto(elemento.innerHTML, idiomaDestino);
-                }
-            }
-        }
-    </script>
 
 
     <footer>
