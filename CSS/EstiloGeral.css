@@ -2,14 +2,15 @@
 * {
     font-family: "Jersey 25", sans-serif;
     font-size: 25px;
-
+   
     box-sizing: border-box;/*faz com q section inclua border e padding */
 }
 html {scroll-behavior: smooth;}
 
 body {
-    background-color: #46a97a;
+  background-color: #46a97a;
     margin: 0px;
+    font-size: 16px;
 }
  /*coisa de cima*/
 header{
@@ -20,8 +21,11 @@ header{
     background-color: #297194;
     display: flex;
     align-items: center;
-   height: 150px;
+   height: 130px;
+    height up:
+  
 }
+
 
 button {
     padding: 10px;
@@ -30,7 +34,7 @@ button {
 
 header img{
     margin: 10px;
-    width: 150px;
+    width: 136px;
 }
 
 nav {
@@ -50,12 +54,12 @@ nav a{
 }
 
 /*texto normal*/
+
 section{
     background-color: #dcdcdc;
     margin: auto; /* a margem se ajusta com o tamanho da tela e fica no meio*/
     padding: 20px; /*ele faz com que o padding do texto n fique pra fora do section por falta de espaço*/
     width: 1200px; /* largura da section*/
-    text-align: center;
 }
 /*texto*/
 h1{
@@ -70,6 +74,7 @@ h2{
 }
 
 p {
+    font-family: "Roboto Condensed", sans-serif;
     color: #2f3d43; 
     text-align: justify;
 }
@@ -176,6 +181,7 @@ form ::placeholder{
 color: #471515;
 }
 
+
 /*cores: 
 #b9492f laranja
 #46a97a verde claro
@@ -185,3 +191,17 @@ color: #471515;
 #2f3d43 preto
 #dcdcdc branco
 ****preto e branco n são 100% para n queimar os olhos :D */
+
+
+
+    #Acessibilidade{
+    background-color: #46a97a;
+    height: 40px;
+    color: gray;
+}
+
+
+
+button{
+    font-size-adjust: none;
+}    

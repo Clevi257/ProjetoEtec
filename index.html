@@ -3,14 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startup</title>
+    <title>Startup</title> 
     <link rel="stylesheet" href="./CSS/EstiloGeral.css">
+    <script src="./java/java.js"></script>
+
 
 </head>
 <body>
+ 
 
+   
+    
+
+  
+
+
+        <header id="Acessibilidade"> 
+            <h2>Acessibilidade</h2>
+             <button id="btnAumentar">T+</button>
+             <button id="Normal">T</button>
+             <button id="btnDiminuir">T-</button>
+       </header> 
+    <script>
+        const tamanhoMaximo = 30; // Limite máximo de tamanho da fonte
+        const tamanhoMinimo = 10; // Limite mínimo de tamanho da fonte
+
+        function alterarFonte(tamanho) {
+            if (tamanho >= tamanhoMinimo && tamanho <= tamanhoMaximo) {
+                document.querySelectorAll("*").forEach(elemento => {
+                    elemento.style.fontSize = tamanho + "px";
+                });
+            }
+        }
+
+        document.getElementById("btnAumentar").addEventListener("click", function() {
+            let tamanhoAtual = parseInt(window.getComputedStyle(document.body).fontSize);
+            if (tamanhoAtual < tamanhoMaximo) {
+                alterarFonte(tamanhoAtual + 2); // Aumenta em 2px
+            }
+        });
+
+        document.getElementById("btnDiminuir").addEventListener("click", function() {
+            let tamanhoAtual = parseInt(window.getComputedStyle(document.body).fontSize);
+            if (tamanhoAtual > tamanhoMinimo) {
+                alterarFonte(tamanhoAtual - 2); // Diminui em 2px
+            }
+        });
+    </script>
+       
     <header>
-
+        
+        
         <a href="./index.html"><img src="./Images/teccoRenderFINAL.png" alt="Logo da startup, nela tem um personagem coo cabeça de tv de tubo quebrada e roupa com sibolo de reciclagem e ele esta levando uma mochila."></a> 
         <nav>    
                 
@@ -19,72 +62,23 @@
             <a href="./yay.html">Produto</a>                                   
             
         </nav>
-            <button>
-                <span _msttexthash="94341" _msthidden="1" _msthash="2">English </span>
-            </button>
+            
     </header>
 
 
     <section>
-        <h1>Bem-vindo ao site!</h1>
-        <p>Este é um exemplo de troca de idioma.</p>
-        <p>Você pode clicar no botão abaixo para mudar o idioma.</p>
-        <button onclick="mudarIdioma()">Mudar Idioma</button>
+       
+       
 
-        <h2>teste para o footer ficar no lugar</h2>
+        <h2>Parceiras</h2>
         <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Aut, iure magni? Recusandae numquam eligendi obcaecati aliquid
-            in voluptatibus accusantium aperiam, fuga esse dignissimos
-            temporibus optio error qui ipsa vitae alias. Ut earum maxime
-            velit, tenetur magnam doloremque, distinctio dolor voluptate
-            non harum dolore, autem hic. Laboriosam eaque minus, beatae
-            enim sapiente reiciendis veritatis laborum quibusdam nam
-            provident incidunt modi atque obcaecati excepturi soluta
-            exercitationem asperiores deleniti accusantium aliquam facere
-            nihil? Ut deserunt beatae similique consequuntur iusto dolorem
-            nulla vitae fuga, sed, voluptates, repellendus natus quam ea
-            ratione. Dicta temporibus eveniet voluptate eaque nesciunt?
-            Quaerat minus vitae non? Praesentium, impedit quas!
-
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Aut, iure magni? Recusandae numquam eligendi obcaecati aliquid
-            in voluptatibus accusantium aperiam, fuga esse dignissimos
-            temporibus optio error qui ipsa vitae alias. Ut earum maxime
-            velit, tenetur magnam doloremque, distinctio dolor voluptate
-            non harum dolore, autem hic. Laboriosam eaque minus, beatae
-            enim sapiente reiciendis veritatis laborum quibusdam nam
-            provident incidunt modi atque obcaecati excepturi soluta
-            exercitationem asperiores deleniti accusantium aliquam facere
-            nihil? Ut deserunt beatae similique consequuntur iusto dolorem
-            nulla vitae fuga, sed, voluptates, repellendus natus quam ea
-            ratione. Dicta temporibus eveniet voluptate eaque nesciunt?
-            Quaerat minus vitae non? Praesentium, impedit quas!
-        </p>
-
+        
+      
     </section>
 
 
-    <script>
-        async function traduzirTexto(texto, idiomaDestino) {
-            const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${idiomaDestino}&dt=t&q=${encodeURIComponent(texto)}`;
-            const resposta = await fetch(url);
-            const dados = await resposta.json();
-            return dados[0][0][0]; // Retorna o texto traduzido
-        }
 
-        async function mudarIdioma() {
-            const idiomaDestino = prompt("Digite o código do idioma (ex: en para inglês, es para espanhol, fr para francês):");
-            if (!idiomaDestino) return;
-
-            let elementos = document.body.querySelectorAll("*");
-            for (let elemento of elementos) {
-                if (elemento.innerHTML.trim() !== "") {
-                    elemento.innerHTML = await traduzirTexto(elemento.innerHTML, idiomaDestino);
-                }
-            }
-        }
-    </script>
+    
 
 
     <footer>
@@ -96,7 +90,7 @@
         
 
     </footer>
-
+    
 </body>
 
 </html>
