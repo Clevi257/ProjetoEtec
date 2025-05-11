@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
 * {
     font-family: "Jersey 25", sans-serif;
-    font-size: 25px;
    
     box-sizing: border-box;/*faz com q section inclua border e padding */
 }
@@ -10,7 +9,7 @@ html {scroll-behavior: smooth;}
 body {
   background-color: #46a97a;
     margin: 0px;
-    font-size: 16px;
+
 }
  /*coisa de cima*/
 header{
@@ -31,7 +30,6 @@ button {
     padding: 10px;
     margin: 20px;
 }
-
 header img{
     margin: 10px;
     width: 136px;
@@ -74,9 +72,11 @@ h2{
 }
 
 p {
+    display: flex;
     font-family: "Roboto Condensed", sans-serif;
     color: #2f3d43; 
     text-align: justify;
+    max-height: 20px;
 }
 
 ul{
