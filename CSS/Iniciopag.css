@@ -1,13 +1,11 @@
 section{
     margin: auto;
-    background-color: aquamarine;
+    text-align: center;
 }
 
 
 form {
-
-    justify-content: center;
-    width: 84%;
+    margin: auto;
 }
 
 
@@ -16,29 +14,4 @@ input{
     margin: 20px;
     font-size: 30px;
 
-}
-
-label {
-
-    font-size: 30px;
-    margin: 10px;
-}
-
-
-body {
-
-    font-family: "Jersey 25", sans-serif;
-    font-size: 50px;
-}
-
-nav{
-
-
-    gap: 35%;
-}
-
-
-a{
-    
-    font: 60px;
 }
