@@ -1,8 +1,6 @@
 section{
-
-    margin right: 80%;
-    margin left: 0;
-    background:none;
+    margin: auto;
+    background-color: aquamarine;
 }
 
 
@@ -31,12 +29,6 @@ body {
 
     font-family: "Jersey 25", sans-serif;
     font-size: 50px;
-}
-
-
-#Tf{
-
-    color: #150e52;
 }
 
 nav{

@@ -69,6 +69,10 @@ section{
     width: 1200px; /* largura da section*/
 }
 /*texto*/
+.h1Especial{
+    color: #dcdcdc;
+}
+
 h1{
     text-transform: uppercase;
     color: #2e8462;
@@ -159,8 +163,12 @@ color: #6d6d6d;
     color: gray;
     font-weight: bold;
     padding: 30px;
-    font-size: 16px
+    font-size: 16px;
+    /*border-width: 6px ;
+    border-style:  none none solid none;
+    border-color: #2e8462;*/
     }
+    
 
     
  #Acessibilidade button{
@@ -171,14 +179,11 @@ color: #6d6d6d;
     
 
 
-#insta{
-  
-    width: 60px;
-}
 
-#X{
-    margin-bottom: 3px;
-    width: 50px;
+
+.RedesSociais{
+    margin:5px;
+    width: 60px;
 }
 
 #Rosto{
