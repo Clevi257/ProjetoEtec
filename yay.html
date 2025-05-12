@@ -17,7 +17,7 @@
             <h2>Acessibilidade</h2>
              <button id="Aumentar">T+</button>
              <button id="Normal">T</button>
-             <button id="nDiminuir">T-</button>
+             <button id="Diminuir">T-</button>
        </header> 
     <script>
         const tamanhoMaximo = 30;
@@ -38,7 +38,7 @@
             }
         });
 
-        document.getElementById("btnDiminuir").addEventListener("click", function() {
+        document.getElementById("Diminuir").addEventListener("click", function() {
             let tamanhoAtual = parseInt(window.getComputedStyle(document.body).fontSize);
             if (tamanhoAtual > tamanhoMinimo) {
                 alterarFonte(tamanhoAtual - 2); 
