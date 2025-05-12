@@ -3,11 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>TREINO</title>
     <link rel="stylesheet" href="./CSS/EstiloGeral.css">
     <link rel="stylesheet" href="./CSS/Iniciopag.css">
+     
+   <script>
+        function enviarFormulario(event) {
+            event.preventDefault(); 
+
+       
+            let nome = document.getElementById("nome").value.trim();
+            let email = document.getElementById("email").value.trim();
+          
+            if (nome === "" || email === "")  {
+                alert("Por favor, preencha todos os campos antes de enviar.");
+                return;
+            }
+
+            
+            document.getElementById("mensagem").innerText = "Formulário enviado, aguarde alguns dias.";
+
+           
+            setTimeout(() => {
+                document.querySelector("form").submit(); 
+            }, 1000); 
+        }
+    </script>
+</form>
+
 </head>
 <body>
+    
+        <header id="Acessibilidade"> 
+            <h2>Acessibilidade</h2>
+             <button id="Aumentar">T+</button>
+             <button id="Normal">T</button>
+             <button id="nDiminuir">T-</button>
+       </header> 
+    <script>
+        const tamanhoMaximo = 30;
+        const tamanhoMinimo = 10;
+
+        function alterarFonte(tamanho) {
+            if (tamanho >= tamanhoMinimo && tamanho <= tamanhoMaximo) {
+                document.querySelectorAll("*").forEach(elemento => {
+                    elemento.style.fontSize = tamanho + "px";
+                });
+            }
+        }
+
+        document.getElementById("Aumentar").addEventListener("click", function() {
+            let tamanhoAtual = parseInt(window.getComputedStyle(document.body).fontSize);
+            if (tamanhoAtual < tamanhoMaximo) {
+                alterarFonte(tamanhoAtual + 2); 
+            }
+        });
+
+        document.getElementById("btnDiminuir").addEventListener("click", function() {
+            let tamanhoAtual = parseInt(window.getComputedStyle(document.body).fontSize);
+            if (tamanhoAtual > tamanhoMinimo) {
+                alterarFonte(tamanhoAtual - 2); 
+            }
+        });
+    </script>
+    
 
     <header>
         <a href="./index.html"><img src="./Images/teccoRenderFINAL.png" alt="Logo da startup, nela tem um personagem coo cabeça de tv de tubo quebrada e roupa com sibolo de reciclagem e ele esta levando uma mochila."></a> 
@@ -19,95 +79,46 @@
             <a href="./yay.html">Produto</a>                                   
             
         </nav>
-            <button>
-                <span _msttexthash="94341" _msthidden="1" _msthash="2">English </span>
-            </button>
+            
     </header>
 
     <section>
 
-        <h1></h1>
+        <h1 id="Tf">Faça parte da nossa equipe! Quanto mais pessoas ao nosso lado melhor será nosso futuro.</h1>
 
-        <p>
-            
-        </p>
-    
-        <div>
-
-              
-                </tbody>
-
-            </table>
         </div>
 
-        <form>
-
-            <input type="text" maxlength="666" name="nome" placeholder="Nome">
-            <br>
-
-            <input type="password" name="senha" placeholder="senha" maxlength="66">
-            <br>
-            <label for="email">separe os emails por virgula, caso ponha mais de um:</label>
-            <br>
-            <input type="email" name="email" placeholder="email@xemplo.com" multiple>
-            <br>
-
-            <label for="numero">numero de pães que você comeu: </label>
-            <br>
-            <input type="number" name="numero" value="0" min="0" max="666" step="2">
-            <br>
-            <label for="data"> coloque um dia que ja passou :3 </label>
-            <input type="date" name="data" min="0000-00-00" max="2025-04-03" value="2025-04-02">
-            <br>
-
-            <input type="checkbox"  name="gosto" value="pão" checked>pão é bom
-
-            <input type="checkbox" name="gosto" value="bolo">bolo é bom
+        <form onsubmit="enviarFormulario(event)">
+            <label for="text"> Digite seu Nome</label>
             <br>
             
-            <label for="compra">Você comprou pão?</label>
+            <input id="nome" type="text" maxlength="666" name="nome" placeholder="Nome" required>
             <br>
-            <input type="radio" name="compra" value="não">eu não comprei
-
-            <input type="radio" name="compra" value="sim">eu comprei
+                <label for="text">No que se Destaca?</label>
+             <br>
+            <input id="Talento" type="text" name="Texto" placeholder="ex:pontual,espeitoso etc" maxlength="666" required>
             <br>
-            <label for="envioArquivo">coloque uma foto de pão:</label>
+                <label for="text">Por que quer entrar nesta Startup?</label>
+             <br>
+            <input type="text" name="texto" placeholder="Conte o motivo" maxlength="666" required>
             <br>
-            <!--dificuldade com o accept-->
-            <input type="file" name="envioArquivo" multiple accept="image/png , image/jpg">
-            <br>
-
-            <label for="telefone">seu telefone para contatos futuros:</label>
+            <label for="email">Coloque seu email</label>
             <br>
 
-            <input type="tel" name="telefone" placeholder="(00)00000-6660">
+            <input id="email" type="email" name="email" placeholder="email@emplox.com" multiple required>
             <br>
 
-            <label for="url">site de bolo:</label>
-            <br>
-
-            <input type="url" name="url" placeholder="https://exemplo.com">
-            <br>
-
-            <label for="pesquisa">pesquise seu bolo/pão favorito:</label>
-            <br>
-            <input type="search" name="pesquisa" placeholder="pesquisar!">
-            <br>
-
-            <label for="cor">cor saborosa:</label>
-            <br>
-            <input type="color" name="cor">
-            <br>
 
             <input type="reset" name="apagar" value="apagar">
 
-            <input type="submit" name="mandar" value="mandar">
+            <input type="submit"></imput>
             <br>
 
-
         </form>
+        <p id="mensagem" style="color: green; font-weight: bold;"></p>
 
     </section>
+
 
     <footer>
         <img src="./images/teccoRenderFINAL.png" alt="Logo da startup, nela tem um personagem coo cabeça de tv de tubo quebrada e roupa com sibolo de reciclagem e ele esta levando uma mochila.">

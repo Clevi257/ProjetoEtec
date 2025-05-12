@@ -1,5 +1,52 @@
 section{
 
-    margin right: 50%;
+    margin right: 80%;
+    margin left: 0;
     background:none;
+}
+
+
+form {
+
+    justify-content: center;
+    width: 84%;
+}
+
+
+
+input{
+    margin: 20px;
+    font-size: 30px;
+
+}
+
+label {
+
+    font-size: 30px;
+    margin: 10px;
+}
+
+
+body {
+
+    font-family: "Jersey 25", sans-serif;
+    font-size: 50px;
+}
+
+
+#Tf{
+
+    color: #150e52;
+}
+
+nav{
+
+
+    gap: 35%;
+}
+
+
+a{
+    
+    font: 60px;
 }
