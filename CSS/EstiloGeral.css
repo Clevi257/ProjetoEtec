@@ -9,6 +9,7 @@ html {scroll-behavior: smooth;}
 body {
   background-color: #2f3d43;
     margin: 0px;
+    whidth: 100%
 }
  /*coisa de cima*/
 header{
@@ -19,8 +20,8 @@ header{
     background-color: #297194;
     display: flex;
     align-items: center;
-   height: 140px; 
-    padding-top: 34 px;
+    height: 20%; 
+    padding: 5px;
 }
 
 div {
@@ -39,7 +40,7 @@ button {
 }
 header img{
     margin: 10px;
-    width: 136px;
+    width: 40%;
     padding: 10px;
 }
 
@@ -69,6 +70,10 @@ section{
     width: 1200px; /* largura da section*/
 }
 /*texto*/
+.h1Especial{
+    color: #dcdcdc;
+}
+
 h1{
     text-transform: uppercase;
     color: #2e8462;
@@ -115,6 +120,30 @@ div img{
     width: 200px;
 }
 
+/*botão*/
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #406871;
+    color: #dcdcdc;
+    border: 2px solid #dcdcdc;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+
+    background-color: #dcdcdc;
+    color: #406871;
+}
+
+
 /*formulario*/ 
 form {
     background-color: #297194 ;
@@ -133,11 +162,7 @@ input {
 label {
     color: #dcdcdc;
     }
-    
-    
-    /*rodapé*/
 
-/*professor n ensinou:*/
 form ::placeholder{
 color: #6d6d6d;
 }
@@ -159,26 +184,21 @@ color: #6d6d6d;
     color: gray;
     font-weight: bold;
     padding: 30px;
-    font-size: 16px
+    font-size: 16px;
+    /*border-width: 6px ;
+    border-style:  none none solid none;
+    border-color: #2e8462;*/
     }
+    
 
     
  #Acessibilidade button{
     padding: 1px;
  }
 
-
-    
-
-
-#insta{
-  
+.RedesSociais{
+    margin:5px;
     width: 60px;
-}
-
-#X{
-    margin-bottom: 3px;
-    width: 50px;
 }
 
 #Rosto{
