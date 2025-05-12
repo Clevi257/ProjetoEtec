@@ -1,0 +1,28 @@
+/* Estilizando a tela de abertura */
+#splash-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ffffff;
+    color: #3498db;
+    border: 0;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+
+    background-color: #2980b9;
+    color: white;
+}

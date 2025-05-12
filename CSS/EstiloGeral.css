@@ -35,6 +35,7 @@ button {
 header img{
     margin: 10px;
     width: 136px;
+    padding: 10px;
 }
 
 nav {
@@ -77,29 +78,10 @@ h2{
 p {
     
     color: #2f3d43; 
-    text-align: justify;
-
 }
 
-ul{
-    color: #2f3d43; 
-    text-align: justify;
-}
-
-ol{
-    color: #2f3d43; 
-    text-align: justify;
-}
 
 /*imagem maldita*/
-
-section img {
-    box-sizing: border-box; 
-    width: 500px;
-    margin: auto;
-    border: 5px solid #000;
-    display: block;
-}
 
 /*tabela*/
 table {
@@ -202,5 +184,25 @@ color: #471515;
     max-height: 35px;
     color: gray;
     font-weight: bold;
+    padding-left: 10px;
+    font-size: 16px
     }
 
+
+    
+#Teccinho{
+    margin: 10px;
+    width: 100px; 
+
+}
+
+#insta{
+  
+    width: 60px;
+   background-color:  #46a97a;
+}
+
+#X{
+        margin-bottom: 3px;
+    width: 50px;
+}
