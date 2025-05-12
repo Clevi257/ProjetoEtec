@@ -7,7 +7,7 @@
 html {scroll-behavior: smooth;}
 
 body {
-  background-color: #46a97a;
+  background-color: #2f3d43;
     margin: 0px;
 }
  /*coisa de cima*/
@@ -21,6 +21,11 @@ header{
     align-items: center;
    height: 140px; 
     padding-top: 34 px;
+}
+
+div {
+    display: flex;
+
 }
 
 a{
@@ -58,7 +63,7 @@ nav a{
 /*texto normal*/
 
 section{
-    background-color: #dcdcdc;
+
     margin: auto; /* a margem se ajusta com o tamanho da tela e fica no meio*/
     padding: 20px; /*ele faz com que o padding do texto n fique pra fora do section por falta de espaço*/
     width: 1200px; /* largura da section*/
@@ -66,7 +71,7 @@ section{
 /*texto*/
 h1{
     text-transform: uppercase;
-    color: #b9492f;
+    color: #2e8462;
 }
 
 h2{
@@ -77,11 +82,8 @@ h2{
 
 p {
     
-    color: #2f3d43; 
+    color: #dcdcdc; 
 }
-
-
-/*imagem maldita*/
 
 /*tabela*/
 table {
@@ -115,60 +117,33 @@ div img{
 
 /*formulario*/ 
 form {
-    border: 2p outset #bef010;
-    background-color: gray;
+    background-color: #297194 ;
     width: 80%;
-    font-weight: bold;
     padding: 5%;
-    border: 10px dashed #8f1a1a;
+    border: 10px solid #297194;
+    border-radius: 30px;
 }
 
 input {
-    background-color: #c4454580;
+    background-color: #dcdcdc;
     margin: 8px;
 }
 
 
 label {
-    color: #150e52;
+    color: #dcdcdc;
     }
     
     
     /*rodapé*/
-footer {
-    background-color: #406871;
-    margin-top: 20px;
-    /**/padding: 20px;
-    min-height: 100px;
-    margin-top: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  
-}
-
-footer img{
-    margin: 10px;
-    width: 100px; 
-}
-
-footer p {
-    color: #dcdcdc;
-    text-align: center;  
-    padding:10px;  
-    margin: 0;   
-    text-transform: uppercase;   
-    }
 
 /*professor n ensinou:*/
 form ::placeholder{
-color: #471515;
+color: #6d6d6d;
 }
 
 
 /*cores: 
-#b9492f laranja
-#46a97a verde claro
 #2e8462 verde
 #406871 cinza
 #297194 azul
@@ -179,31 +154,30 @@ color: #471515;
 
 
   #Acessibilidade{
-        margin-bottom: 7px;
-    background-color: #46a97a;
+    margin: 0px;
     max-height: 35px;
     color: gray;
     font-weight: bold;
-    padding-left: 10px;
+    padding: 30px;
     font-size: 16px
     }
 
+    
+ #Acessibilidade button{
+    padding: 1px;
+ }
+
 
     
-#Teccinho{
-    margin: 10px;
-    width: 100px; 
 
-}
 
 #insta{
   
     width: 60px;
-   background-color:  #46a97a;
 }
 
 #X{
-        margin-bottom: 3px;
+    margin-bottom: 3px;
     width: 50px;
 }
 
