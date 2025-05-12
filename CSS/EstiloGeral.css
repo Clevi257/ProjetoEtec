@@ -9,6 +9,7 @@ html {scroll-behavior: smooth;}
 body {
   background-color: #2f3d43;
     margin: 0px;
+    whidth: 100%
 }
  /*coisa de cima*/
 header{
@@ -19,8 +20,8 @@ header{
     background-color: #297194;
     display: flex;
     align-items: center;
-    height: 140px; 
-    padding-top: 34 px;
+    height: 20%; 
+    padding: 5px;
 }
 
 div {
@@ -39,7 +40,7 @@ button {
 }
 header img{
     margin: 10px;
-    width: 136px;
+    width: 40%;
     padding: 10px;
 }
 
