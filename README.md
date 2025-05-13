@@ -16,3 +16,4 @@ asdasd
 * Andrés Guilherme lechugo Tanaka
 * Yasmin Squaris Emilio
 * Pedro Luiz Moura da Silva
+* Gustavo Fernando Domingues Camillo
