@@ -1,10 +1,10 @@
 # ![Image](https://github.com/user-attachments/assets/cfe487a6-4d1a-40d4-9317-9c1af4ce27d3)
-  É us site feito para a participação do hackteen, ema competição criada pela Venturus. O projeto se trata de uma startup com o objetivo de implementar lixos eletronicos em escolas técnicas, por meio de uma moeda social que faz a troca do lixo eletronico com a escola e envia o lixo eletronico para recicladoras.
-##ETEC Aristóteles ferreira 1N1:
+  É os site feito para a participação do hackteen, na competição criada pela Venturus. O projeto se trata de uma startup com o objetivo de implementar pontos de coleta de lixos eletronicos em escolas técnicas, para que haja o descarte correto de dispostivos quebrados e a reutilização dos componentes funcionais.
+## ETEC Aristóteles ferreira 1N1:
 ## prblema
+O desperdicio e a poluição causada pelo descuido no descarte de dispositivos eletronicos.
 ## solução
-###porque ela é boa
-como chegamos nela
+Fazer parceiria com escolas com ensinos nas area de tecnologia e que não tem cono descartar de forma adequada seu lixo eletronico, e conecta-las a uma rede de coleta para centros de reutilização.
 ## Layout
 ![Image](https://github.com/user-attachments/assets/500514db-9382-4039-b971-374be9c80159)
 
