@@ -1,6 +1,0 @@
-/* Estilizando a tela de abertura */
-#splash-screen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
