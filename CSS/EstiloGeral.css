@@ -72,17 +72,15 @@ nav a{
     article{
 
     margin: auto; /* a margem se ajusta com o tamanho da tela e fica no meio*/
-    padding: 20px; /*ele faz com que o padding do texto n fique pra fora do section por falta de espaço*/
+    padding: 20px; /*ele faz com que o padding do texto n fique pra fora do article por falta de espaço*/
     width: 90%; /* largura da section*/
     border-radius: 15px;
     background-color: #406871;
+    }
 
-    /*position: absolute;
-    top: 10%;
-    left: 40%;*/
-    ;
-}
-
+    section{
+       text-align: center;
+    }
 
 .h1Especial{
     color: #dcdcdc;
@@ -249,11 +247,6 @@ a{
     height: 24px;
 }
 
-
-
-
- 
-
 .container {
     display: flex; 
     flex-direction: row; 
@@ -328,6 +321,15 @@ a{
     margin-bottom: 40px;
     margin-left: 70px;
 }
+
+
+
+.nósfotos{
+    position: relative;
+    top: -40px;
+    left: -40px;
+}
+
 
 /*media query*/
 @media screen and (max-width: 550px) {

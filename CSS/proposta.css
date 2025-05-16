@@ -7,9 +7,15 @@ section{
     text-align: center;
 }
 
-#proposta{
-    margin: auto;
+#teccinho img{
+    width: 100%;
+    padding: 5%;
 }
+
+#proposta{
+    min-width: 55%;
+}
+
 div{
     justify-content: space-around;
     display: flex;
@@ -26,6 +32,10 @@ article{
     margin: auto;
     text-align: center;
     min-width: 300px;
+}
+
+section{
+    width: 100%;
 }
 
 h1{
