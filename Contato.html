@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contato</title>
+    <link rel="stylesheet" href="./CSS/EstiloGeral.css">
+    <link rel="stylesheet" href="./CSS/contato.css">
+    
+</form>
+
+</head>
+<body>
+    
+    <header id="Acessibilidade"> 
+        <strong>  <h2>Acessibilidade</h2></strong>
+        <button id="Aumentar">T+</button>
+        <button id="Normal">T</button>
+        <button id="Diminuir">T-</button>
+    </header>
+    <script src="./Java/inicio.js"></script>
+    
+    <header id="Inicialpg">
+        
+        
+        <a href="./index.html"><img src="./Images/teccoRenderFINAL.png" alt="Logo da startup, nela tem um personagem coo cabeça de tv de tubo quebrada e roupa com sibolo de reciclagem e ele esta levando uma mochila."></a> 
+        <nav>    
+
+            <a href="./Proposta.html">Proposta</a>
+                
+            <a href="./Nós.html">História</a>
+            
+            <a href="./Contato.html">Contato</a>       
+            
+            
+            
+        </nav>
+        
+      
+    
+    </header>
+
+
+    <section>
+        
+        <h1>Participe do projeto</h1>
+
+        <form id="form" onsubmit="enviarFormulario(event)">
+
+
+            <label for="text"> Digite seu Nome</label>
+            <br>
+            
+            <input id="nome" type="text" maxlength="666" name="nome" placeholder="Nome" required>
+            <br>
+
+            <label for="text">Coloque seu telefone</label>
+            <br>
+
+            <input id="Telefone" type="tel" name="Texto" placeholder="+00 00 0000-0000" maxlength="16" required>
+            <br>
+
+            <label for="email">Coloque seu email</label>
+            <br>
+
+            <input id="email" type="email" name="email" placeholder="email@emplox.com" multiple required>
+            <br>
+
+                <label for="text">Digite a sua mensagem</label>
+             <br>
+
+            <textarea name="Mensagem" placeholder="Mensagem" maxlength="600" rows="5" cols="75" required></textarea>
+            <br>
+
+            <input type="submit" name="Enviar" value="ENVIAR" class="buttons">
+
+            <input type="reset" name="limpar" value="LIMPAR" class="buttons">
+
+            <br>
+        </form>
+
+    </section>
+
+
+    
+</body>
+
+</html>
