@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
 * {
-    font-family: "Jersey 25", sans-serif;
-    font-size: 25px;
+    /*font-family: "Jersey 25", sans-serif;*/
+    font-family: Roboto;
+    font-size: 18px;
     box-sizing: border-box;/*faz com q section inclua border e padding */
 }
 html {scroll-behavior: smooth;}
