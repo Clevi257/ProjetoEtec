@@ -14,9 +14,9 @@ Fazer parceiria com escolas com ensinos nas area de tecnologia e que não tem co
 
 ![Image](https://github.com/user-attachments/assets/2edac72c-febe-4868-a7d9-923bf2298c7a)
 ## Tecnologias Utilizadas
-* HTMl
-* CSS
-* Java Script
+* HTMl (Usado para fazer o Formulário, o cabeçalho do site e todas as outras páginas) 
+* CSS (Usada para deixar o site responsivo, destacar elementos, dar "vida" ao site deixando ele mais agradável para todas as idades
+* Java Script (Para fazer o sistema de acessibilidade, validação do formulário)
 
 ## Inicializção
 É necessário apenas
